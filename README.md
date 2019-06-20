@@ -4,7 +4,14 @@
 - True Random Number Generator (TRNG) for key generation
 
 # **【 What is PKI over LoRa? 】**
-우리는 LoRaWAN 에서 현재 사용하고 있는 PSK (Pre-shared key) scheme 에서 발생할 수 있는 문제점을 해결하기 위한 Solution으로 PKI 기반의 실시간 Key 교환 및 장치인증 메커니즘을 이용한 섹션키를 배치할 수 있는 메커니즘을 제안한다.   
+우리는 LoRaWAN 에서 현재 사용하고 있는 PSK (Pre-shared key) scheme 에서 발생할 수 있는 문제점을 해결하기 위한 Solution으로 PKI 기반의 실시간 Key 교환 및 장치인증 메커니즘을 이용한 섹션키를 배치할 수 있는 메커니즘을 제안한다.
+
+## Advantage
+   - No Extra procedure before deployment
+      - Follow the regular procedure of PSK (pre-share key) mechanism
+   - No human involvement during new key generation procedure
+      - It’s based on PKI (public Key Infrastructure)
+      - After first key exchange, the root key is stored encrypted inside secure MCU     
 
 ## Key Provisioning in 3 Steps
    - Step 1 - Join Request (Over-the-Air Activation)
@@ -26,20 +33,25 @@
    - Windows 10
    
 ## Linux & BSD
-   - *** TBD ***
-  
+   - ***TBD***
 
 
 # **【 Features 】**
 ## Device authentication 
    - ECDSA 메커니즘을 사용하여 장치와 서버간 인증
    
-## Realtime Key exchange
+## Realtime new key provisioning 
    - ECDH 메커니즘을 사용하여 장치와 서버간 실시간 비밀키 생성
 
 # **【 Related Crypto Libraries 】**
-- OpenSSL-1.1.Of-vs2017
+   - OpenSSL-1.1.Of-vs2017
 
  # **【 Requirements 】**
   
  # **【 Quickstart 】**
+ 
+ # **【 License 】**
+   - [LICENSE TERM](LICENSE.md)
+
+
+**[eWBM Home Page](ewbm.com)**
