@@ -39,7 +39,7 @@
 
 # **【 Related Crypto Libraries 】**
 - OpenSSL-1.1.Of-vs2017
-- ECC
-  - Curve parameter (Secp256R1)
-  - EC
- 
+
+ # **【 Requirements 】**
+  
+ # **【 Quickstart 】**
