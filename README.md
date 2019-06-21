@@ -59,7 +59,14 @@
    - A Port 1 is dedicated to eWBM PKI communication and is therefore forbidden to use.
    - If you attempt UPLINK up to eight times to receive server response from End-Device and do not receive PKIServer Answer, it is a failure.
   
- # **【 Quickstart 】**
+ # **【 Demo Video 】**
+ 
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/watch?v=oMrKdMx5WGA" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
  
  # **【 License 】**
    - [LICENSE TERM](LICENSE.md)
