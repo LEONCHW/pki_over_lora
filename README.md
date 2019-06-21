@@ -4,7 +4,7 @@
 - True Random Number Generator (TRNG) for key generation
 
 # **【 What is PKI over LoRa? 】**
-우리는 LoRaWAN 에서 현재 사용하고 있는 PSK (Pre-shared key) scheme 에서 발생할 수 있는 문제점을 해결하기 위한 Solution으로 PKI 기반의 실시간 Key 교환 및 장치인증 메커니즘을 이용한 섹션키를 배치할 수 있는 메커니즘을 제안한다.
+- Propose a mechanism to place a section key using PKI-based real-time key exchange and device authentication mechanism as a solution to solve problems that may arise from PSK (pre-shared key) scheme currently used by LoRaWAN.
 
 ## Advantage
    - No Extra procedure before deployment
@@ -38,15 +38,26 @@
 
 # **【 Features 】**
 ## Device authentication 
-   - ECDSA 메커니즘을 사용하여 장치와 서버간 인증
+   - Authenticate between devices and servers using the ECDSA mechanism
    
 ## Realtime new key provisioning 
-   - ECDH 메커니즘을 사용하여 장치와 서버간 실시간 비밀키 생성
+   - Makes a real-time secret keys between devices and servers using the ECDH mechanism
 
 # **【 Related Crypto Libraries 】**
    - OpenSSL-1.1.Of-vs2017
 
  # **【 Requirements 】**
+ |   CID    |     Command     |   Device     |   Server     |                    Description                               |
+ |----------|-----------------|--------------|--------------|--------------------------------------------------------------|
+ |0x01      | PubKeyReq       |     X        |              | The device requests the public key to Server                 |
+ |0x02      | PubKeyAns       |              |      X       | Send the Public key in regards to the PubkeyReq response     |
+ |0x03      | SigVerifyReq    |     X        |              | The device sends the signature data(48byte) request the authentication from Server            |
+ |0x04      | SigVerifyAns    |              |     X        | Sends the result in regard to the device authentication (CID + Result - 2byte |
+ |0x05      | KeyChangeReq |  X  |  |  On the node that has been certified successfully, request the server to change the key |
+ 
+<span style="color:red"> Notice </span>
+   - A Port 1 is dedicated to eWBM PKI communication and is therefore forbidden to use.
+   - If you attempt UPLINK up to eight times to receive server response from End-Device and do not receive PKIServer Answer, it is a failure.
   
  # **【 Quickstart 】**
  
@@ -54,5 +65,7 @@
    - [LICENSE TERM](LICENSE.md)
 
 
-***https://www.ewbm.com***
+
+***[eWBM Home](https://www.ewbm.com "Title")***
+
 
