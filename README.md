@@ -60,15 +60,15 @@
    - If you attempt UPLINK up to eight times to receive server response from End-Device and do not receive PKIServer Answer, it is a failure.
   
  # **【 Demo Video 】**
+
+[![eWBM CEO Explain for PKI over LoRa](https://img.youtube.com/vi/t0F7fe5Alwg/0.jpg)](https://youtu.be/oMrKdMx5WGA) 
+***eWBM CEO Explain for PKI over LoRa***
  
-<!-- blank line -->
-[youtube url="https://youtu.be/dWO9uP_VJV8"] 
+[![eWBM PKI over LoRa](https://img.youtube.com/vi/tcVT_xI7Ckw/0.jpg)](https://youtu.be/tcVT_xI7Ckw) 
+***eWBM Lora PKI Session Key Autochange Demo***
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=oMrKdMx5WGA" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
-
+[![eWBM LoRa P2P and eSE100 Azure Demo](https://img.youtube.com/vi/3d2fyAFG1oU/0.jpg)](https://youtu.be/3d2fyAFG1oU) 
+***eWBM LoRa P2P and eSE100 Azure Demo***
 
  
  # **【 License 】**
