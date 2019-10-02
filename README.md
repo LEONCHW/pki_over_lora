@@ -76,6 +76,6 @@
 
 
 
-***[eWBM Home](https://www.ewbm.com "Title")***
+***[eWBM PKI over LoRa Home](https://www.ewbm.com/page/LoRA "Title")***
 
 
